@@ -49,7 +49,7 @@ public class UserController {
         return "editPage";
     }
 
-    @GetMapping("/deleteUser")
+    @DeleteMapping("/deleteUser")
     public String deleteUser(@RequestParam(value = "id") long id) {
         userService.deleteUser(id);
 
